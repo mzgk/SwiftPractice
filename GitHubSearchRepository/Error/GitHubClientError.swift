@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GitHubClientError: Error {
+enum GitHubClientError: Error {
     // 通信に失敗
     case connectionError(Error)
     // レスポンスの解釈に失敗
